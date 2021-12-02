@@ -3,7 +3,7 @@ agent any
 stages{
 stage('sample'){
 steps{
-  sh "echo ''"
+  sh "echo ${env.BRANCH_NAME}"
 }
 }
 }
